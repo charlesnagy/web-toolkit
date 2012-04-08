@@ -90,7 +90,7 @@ sub optimize
 			print "\n";
 		}
 
-		$savings = $save;
+		$savings += $save;
 	}
 
 	print uncolor ('01;31'), "\n";
@@ -99,7 +99,7 @@ sub optimize
 
 print "Finished\n";
 print "---------------------------\n";
-print "Image processed: $resizes\n";
+print "Image resized: $resizes\n";
 print "Image optimised: $opts\n";
 print "Saved storage: " . sprintf("%.2f", $savings) . "kByte";
 
